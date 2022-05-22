@@ -9,10 +9,6 @@ func main() {
 	c <- "hello"
 	c <- "baby"
 
-	msg := <- c
-	fmt.Println(msg)
-
-	msg = <- c
-	fmt.Println(msg)
-
+	msg := <-c
+	fmt.Println(msg + msg)
 }
